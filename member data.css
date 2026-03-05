@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cuerpo */
+body {
+    background: linear-gradient(180deg, #e3f0ff 0%, #c4d8ee 100%);
+    color: #1a1a1a;
+}
+
+/* Encabezado */
+.header {
+    background-color: #5b7ea3; /* Azul frío destacable */
+    color: #f0f8ff;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px; /* Espacios entre imágenes */
+}
+
+.image-container {
+    flex: 1 1 300px; /* Cada imagen ocupa mínimo 300px y se ajusta */
+    max-width: 400px;
+    background-color: #f0f8ff;
+    padding: 10px; /* Espacio arriba, abajo, izquierda, derecha */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Mantiene proporción y no corta la imagen */
+    display: block;
+    border-radius: 10px;
+}
+
+.image-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Pie de página */
+.footer {
+    background-color: #5b7ea3; /* Mismo azul que el encabezado */
+    color: #f0f8ff;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 1rem;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+}
+.header-buttons {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Separación mínima del párrafo */
+    gap: 20px; /* Espacio entre botones */
+}
+
+/* Estilo de los botones */
+.btn-link {
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #7aa7c9; /* Tonalidad fría destacable */
+    color: #f0f8ff;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-link:hover {
+    background-color: #517898;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
